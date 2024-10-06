@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import './App.css'; // Keep this line to import your CSS styles
+import SpinnerWheel from './SpinnerWheel'; // Import the SpinnerWheel component
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Welcome to the Spinner Wheel Game!</h1>
+      <SpinnerWheel /> {/* Render the SpinnerWheel component */}
     </div>
   );
 }
